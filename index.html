@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Soccer Team Application</h1>
+    <p id="description">Please fill out the information below</p>
+    <form id="survey-form" >
+      <fieldset>
+      <label id="name-label" >Name<input id="name" type="text" placeholder="John" required /></label>
+      <label id="email-label" >Email<input id="email" type="email" placeholder="example@email.com" required/></label>
+      <label id="number-label">Age<input id="number" type="number" placeholder="age" min="10" max="99"/></label></fieldset>
+      <fieldset>
+        <legend>Which is your main position?</legend>
+        <select id="dropdown" > options
+          <option value="" >(select one)</option>
+          <option value="1" >Goalkeeper</option>
+          <option value="2" >Defender (Centre-back, Sweeper, Full-back, Wing-back)</option>
+          <option value="3" >Midfielder (Centre midfield, Defensive midfield, Attacking midfield, Wide midfield)</option>
+          <option value="4" >Forward (Centre forward, Second striker, Winger)</option>
+        </select> 
+        </fieldset>
+        <fieldset>
+          <legend>Which is your main leg?</legend> 
+        <label><input name="main-leg" class="inline" type="radio" value="1" />Right leg</label>
+        <label><input name="main-leg" class="inline" type="radio" value="2"/>Left leg</label>
+        <label><input name="main-leg" class="inline" type="radio" value="3"/>Both</label>
+      </fieldset>
+        <fieldset>
+          <legend>Any previous injuries?</legend>
+        <input value="1" class="inline" type="checkbox">Broken Ankle
+        <input value="2" class="inline" type="checkbox">Broken Leg
+        <input value="3" class="inline" type="checkbox">Missing Leg
+        <label>Extra info on injuries
+          <textarea placeholder="Backwards knee..." ></textarea>
+          </label>
+        <input type="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
